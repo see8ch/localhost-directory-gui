@@ -3,7 +3,7 @@ Localhost Directory GUI
 
 A facelift for the localhost directory
 
-<img src="https://cloudup.com/c3CpcAhH3PN"/>
+<img src="http://norther.li/_github/localhost-gui.png"/>
 
 
 <h3>Installation</h3>
