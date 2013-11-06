@@ -84,14 +84,14 @@ a {
 
 .folder:before {
 	content:'▶';
-	opacity:0.4;
+	opacity:0.6;
 	margin-right:7px;
 	font-size:0.7em;
 }
 
 .file:before {
-	content:'📄';
-	opacity:0.8;
+	content:'▶';
+	opacity:0.2;
 	margin-right:7px;
 	font-size:0.7em;
 }
