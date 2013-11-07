@@ -28,7 +28,6 @@
 			$dirArray[] = $entryName;
 		}
 
-<<<<<<< HEAD
 				 // finds extention of file
 		function findexts ($filename)
 		{
@@ -38,13 +37,6 @@
 			$exts = $exts[$n];
 			return strtoupper($exts);
 		}
-=======
-         // finds extention of file
-         function findexts ($filename) {
-	  $exts=pathinfo($filename,PATHINFO_EXTENSION);
-	  return strtoupper($exts);
-	 }
->>>>>>> pr/5
 
 				 // closes directory
 		closedir($myDirectory);
@@ -76,22 +68,5 @@
 		?>
 		</div>
 
-<<<<<<< HEAD
 	</body>
-=======
-         // loops through the array of files and print them all
-         for($index=0; $index < $indexCount; $index++) {
-               if (substr("$dirArray[$index]", 0, 1) != "."){ // don't list hidden files
-					if (findexts($dirArray[$index]) == strtoupper($dirArray[$index])) {
-						echo "<tr><td><a class='folder' href='$dirArray[$index]'>$dirArray[$index]/</a></td>"."<td> Folder </td>"."<td>".round(filesize($dirArray[$index])/1000,2)." Mb"."</td>"."</tr>\n";
-					}else{
-						echo "<tr><td><a class='file' href='$dirArray[$index]'>$dirArray[$index]</a></td>"."<td>".findexts($dirArray[$index])."</td>"."<td>".round(filesize($dirArray[$index])/1000,2)." Mb"."</td>"."</tr>\n";
-					}
-           	   }
-         }
-         echo "</table>\n";
-       ?>
-   </div>
-
-</body>
 </html>
