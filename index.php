@@ -29,12 +29,8 @@
 		}
 
 				 // finds extention of file
-		function findexts ($filename)
-		{
-			$filename = strtolower($filename) ;
-			$exts = split("[/\\.]", $filename) ;
-			$n = count($exts)-1;
-			$exts = $exts[$n];
+		function findexts ($filename) {
+			$exts=pathinfo($filename,PATHINFO_EXTENSION);
 			return strtoupper($exts);
 		}
 
