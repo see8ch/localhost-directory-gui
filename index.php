@@ -56,7 +56,7 @@
 
 				 // loops through the array of files and print them all
 		foreach($dirArray as $item) {
-			if ($item != '.' && $item != '..'){ // don't list hidden files
+			if ($item != '.' && $item != '..' && $item != 'index.php' && $item != 'style.css'){ // don't list hidden files or index & css file
 				if (is_dir($item)) {
 					echo "<tr><td><a class='folder' href='$item'>$item/</a></td>"."<td> Folder </td>"."<td>".round(filesize($item)/1000,2)." Mb"."</td>"."</tr>\n";
 				}else{
